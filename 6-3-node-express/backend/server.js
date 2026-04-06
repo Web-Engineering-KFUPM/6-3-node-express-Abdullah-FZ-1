@@ -14,15 +14,7 @@ app.get("/", (req, res) => {
   res.send("Express server is running");
 });
 
-app.get("/api/quote", (req, res) => {
-  const quote = getRandomQuote();
-  res.json({ quote });
-});
-
 // TODO 6.2: Create "/api/quote" route
 
 
 // TODO 7: Start server using app.listen
-app.listen(PORT, () => {
-  console.log(`Server running on http://localhost:${PORT}`);
-});
